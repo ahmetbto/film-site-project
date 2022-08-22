@@ -2,9 +2,13 @@ import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    test: 5,
+    filmList: '',
   },
-  mutations: {},
+  mutations: {
+    filmMutation(state, value) {
+      state.filmList = value;
+    },
+  },
   actions: {},
   modules: {},
 });
